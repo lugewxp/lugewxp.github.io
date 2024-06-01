@@ -2,13 +2,22 @@
 <title>YZ测试</title>
 <link rel="icon" type="image/x-icon" href="wxp.ico"/>
 <script src="scripts/main.js" defer></script>
-<form>
-  <div>
-    <label for="example">我们来提交一些文字吧！</label>
-    <input id="example" type="text" name="text" />
-  </div>
-  <div>
-    <input type="submit" value="发送" />
-  </div>
-</form>
+<body>
+    <form action="post.php" method="post">
+        <label for="username"> 用户名：</label>
+        <input type="text" name="username" id="username" placeholder="请输入用户名">
+        <label for="password">密码：</label>
+        <input type="password" name="password" id="password" placeholder="请输入密码">
+        <br>
+        <label>性别：</label>
+        <input type="radio" name="sex" id="" value="0" checked>男
+        <input type="radio" name="sex" id="" value="1">女
+        <br>
+        <label>爱好：</label>
+        apple<input type="checkbox" name="apple" id="">
+        orange <input type="checkbox" name="orange" id="" checked>
+        <br>
+        <input type="submit" value="提交">
+    </form>
+</body>
 
